@@ -23,4 +23,8 @@ REACTION_KEYS: [left, right, up, down]
 REACTION_KEYS_SEP: 30
 CSI_BAND: [13, 18]
 STIM_COLOR: dimgray
+kontrolki: ["szklany", "jasny", "kwiatowy", "drewniany"]
+kolory: ["żółty", "zielony", "niebieski", "czerwony"]
+colors: ["yellow", "green", "blue", "red"]
+literki: ['z', 'x', 'n', 'm']
 
