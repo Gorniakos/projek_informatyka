@@ -149,12 +149,9 @@ def main():
     logging.info('SCREEN RES: {}'.format(screen_res))
 
     # === Prepare stimulus here ===
-    #
-    # Examples:
-    # fix_cross = visual.TextStim(win, text='+', height=100, color=conf['FIX_CROSS_COLOR'])
-    # que = visual.Circle(win, radius=conf['QUE_RADIUS'], fillColor=conf['QUE_COLOR'], lineColor=conf['QUE_COLOR'])
-    # stim = visual.TextStim(win, text='', height=conf['STIM_SIZE'], color=conf['STIM_COLOR'])
-    # mask = visual.ImageStim(win, image='mask4.png', size=(conf['STIM_SIZE'], conf['STIM_SIZE']))
+    
+    fix_cross = visual.TextStim(win, text='+', height=100, color=conf['FIX_CROSS_COLOR'])
+    stim = visual.TextStim(win, text=random.chioce(conf['STIM_WORD']), height=conf['STIM_SIZE'], color=random.choice(conf['STIM_COLOR']))
 
     # === Training ===
     show_info(win, join('.', 'messages', 'hello.txt'))
@@ -213,8 +210,8 @@ def run_trial(win, conf, clock, ...):
     # === Start pre-trial  stuff (Fixation cross etc.)===
 
     # for _ in range(conf['FIX_CROSS_TIME']):
-    #    fix_cross.draw()
-    #    win.flip()
+    fix_cross.draw()
+    win.flip()
 
     # === Start trial ===
     # This part is time-crucial. All stims must be already prepared.
