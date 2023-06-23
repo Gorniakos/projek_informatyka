@@ -2,7 +2,7 @@
 BACKGROUND_COLOR: darkgray
 FRAME_RATE: 60
 SCREEN_RES: [1920, 1080]
-FIX_CROSS_TIME: 30 
+FIX_CROSS_TIME: 500 
 NO_TRAINING_TRIALS: [5, 1]
 INTRA_BLOCK_TRAINING: 2
 NO_BLOCKS: 1
@@ -16,15 +16,12 @@ QUE_SHIFT: 40
 STIM_LETTERS: ←→↑↓
 STIM_SIZE: 25
 STIM_SHIFT: 600
-STIM_TIME: 15
+STIM_TIME: 3000
 REACTION_TIME: 90
 MASK_TIME: 10
-REACTION_KEYS: [left, right, up, down]
+REACTION_KEYS: [z, x, n, m]
 REACTION_KEYS_SEP: 30
 CSI_BAND: [13, 18]
-STIM_COLOR: dimgray
-kontrolki: ["szklany", "jasny", "kwiatowy", "drewniany"]
-kolory: ["żółty", "zielony", "niebieski", "czerwony"]
-colors: ["yellow", "green", "blue", "red"]
-literki: ['z', 'x', 'n', 'm']
-
+STIM_COLOR: ["yellow", "green", "blue", "red"]
+STIM_WORD: ["żółty", "zielony", "niebieski", "czerwony"]
+CONTROL_WORD: ["szklany", "jasny", "kwiatowy", "drewniany"]
