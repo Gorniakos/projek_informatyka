@@ -1,6 +1,3 @@
-Dokładny opis zadania stawianego osobie badanej, najlepiej z przykładem.
-Informacja, że ekseryment zostanie poprzedzony sesją treningową. 
-Zachęta do zadawania pytań w razie niezrozumienia problemu.
+Twoim zadaniem będzie odpowiadanie na pytanie o kolor czcionki, którą będą zapisane wyświetlane słowa, ignorując ich znaczenie. Każde słowo będzie poprzedzone punktem fiksacji (krzyżykiem). Kiedy się pojawi, skup na nim wzrok. Słowo pojawi się w centrum ekranu.
 
-Najpierw czeka Cię trening zadania. 
-Przyciśnij SPACJĘ by rozpocząć.
+Aby przejść dalej naciśnij spację.
