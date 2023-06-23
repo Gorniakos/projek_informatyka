@@ -154,13 +154,15 @@ def main():
     stim = visual.TextStim(win, text=random.chioce(conf['STIM_WORD']), height=conf['STIM_SIZE'], color=random.choice(conf['STIM_COLOR']))
 
     # === Training ===
-    show_info(win, join('.', 'messages', 'hello.txt'))
+    show_info(win, join('.', 'messages', 'Instruction_1.txt'))
+    show_info(win, join('.', 'messages', 'Instruction_2.txt'))
+    show_info(win, join('.', 'messages', 'Instruction_3.txt'))
     show_info(win, join('.', 'messages', 'before_training.txt'))
     csi_list = [conf['TRAINING_CSI']] * conf['NO_TRAINING_TRIALS'][1]
 
     for trial_no, csi in enumerate(csi_list, 1):
-        key_pressed, rt, ... = run_trial(win, conf, clock, ...)
-        corr = ...
+        key_pressed, rt = run_trial(win, conf, clock, ...)
+        corr = 1 if key =  
         RESULTS.append([PART_ID, trial_no, 'training', ...])
 
         # it's a good idea to show feedback during training trials
