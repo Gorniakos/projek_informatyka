@@ -122,14 +122,14 @@ def abort_with_error(err: str) -> None:
 # GLOBALS
 
 RESULTS = list()  # list in which data will be colected
-RESULTS.append(['PART_ID', 'Trial_no', 'Reaction time', 'Correctness', '...'])  # ... Results header
+RESULTS.append(['PART_ID', 'Trial_no', 'Reaction time', 'Correctness', 'Accuracy', 'Stim word', 'Trial type', 'Experimental'])  # ... Results header
 
 
 def main():
     global PART_ID  # PART_ID is used in case of error on @atexit, that's why it must be global
 
     # === Dialog popup ===
-    info: Dict = {'ID': '', 'Sex': ['M', "F"], 'Age': '20'}
+    info: Dict = {'ID': '', 'Sex': ['M', "F"], 'Age': ''}
     dict_dlg = gui.DlgFromDict(dictionary=info, title='Experiment title, fill by your name!')
     if not dict_dlg.OK:
         abort_with_error('Info dialog terminated.')
